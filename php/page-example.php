@@ -16,6 +16,8 @@
             ?>
         </section>
     </div>
+    <p>PAGE</p>
+    <button>button</button>
 </main>
 
 <?php
