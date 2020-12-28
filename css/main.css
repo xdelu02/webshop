@@ -1,10 +1,134 @@
-.header {
-  background: #1c1c1c;
-  color: #f4f4f4;
+.header nav {
+  background-color: white;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-body {
-  background: lightblue;
+.header nav ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  width: 50%;
+  height: auto;
+  overflow: hidden;
+  background-color: none;
+  /* #333333 */
+}
+
+.header nav li {
+  float: left;
+}
+
+.header nav li a {
+  display: block;
+  color: black;
+  /* white */
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+}
+
+.header nav li::hover {
+  background-color: whitesmoke;
+  /* #111111 */
+}
+
+.header nav a::hover {
+  border-bottom: 1px solid #333333;
+}
+
+.header-logo {
+  height: auto;
+  width: 100px;
+  padding: none;
+}
+
+.header-login {
+  display: block;
+}
+
+.header-login form {
+  float: right;
+  margin-right: 1%;
+}
+
+.header-login form input[type=password] {
+  width: 150px;
+  padding: 10px;
+  margin: auto 5px auto 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  vertical-align: center;
+  background-color: whitesmoke;
+}
+
+.header-login form input[type=password]::focus {
+  border: 1px solid #333333;
+}
+
+.header-login input[type=text] {
+  width: 150px;
+  padding: 10px;
+  margin: auto 5px auto 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  vertical-align: center;
+  background-color: whitesmoke;
+}
+
+.header-login input[type=text]::focus {
+  border: 1px solid #333333;
+}
+
+.header-login button {
+  background-color: #333333;
+  border: none;
+  color: whitesmoke;
+  padding: 16px 16px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.header-login button::focus {
+  background-color: whitesmoke;
+  border: 1px solid #333333;
+  color: #333333;
+}
+
+.signup-button {
+  background-color: whitesmoke;
+  border: none;
+  color: #333333;
+  padding: 16px 16px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  float: right;
+  margin-right: 1%;
+}
+
+.signup-button::focus {
+  background-color: #333333;
+  color: white;
+}
+
+.wrapped-main {
+  background-color: white;
+  border: none;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  text-align: center;
 }
 
 main button {

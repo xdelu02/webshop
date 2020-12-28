@@ -1,4 +1,109 @@
 .header {
-    background: $nero-grafite;
-    color: $bianco-segnale;
+    nav {
+        background-color: white;
+        width: 100%;
+        height: auto;
+        display: block;
+        ul {
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+            width: 50%;
+            height: auto;
+            overflow: hidden;
+            background-color: none;/* #333333 */
+        }
+        li {
+            float: left;
+            a {
+                display: block;
+                color: black;/* white */
+                text-align: center;
+                padding: 15px;
+                text-decoration: none;
+            }
+            &::hover {
+                background-color: whitesmoke;/* #111111 */
+            }
+        }
+        a {
+            &::hover {
+                border-bottom: 1px solid $grafite;
+            }
+        }
+    }
+}
+
+.header-logo {
+    height: auto;
+    width: 100px;
+    padding: none;
+}
+
+.header-login {
+    display: block;
+    form {
+        float: right;
+        margin-right: 1%;
+        input[type=password] {
+            width: 150px;
+            padding: 10px;
+            margin: auto 5px auto 5px;
+            box-sizing: border-box;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            vertical-align: center;
+            background-color: whitesmoke;
+            &::focus {
+                border: 1px solid $grafite;
+            }
+        }
+    }
+    input[type=text] {
+        width: 150px;
+        padding: 10px;
+        margin: auto 5px auto 5px;
+        box-sizing: border-box;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        vertical-align: center;
+        background-color: whitesmoke;
+        &::focus {
+            border: 1px solid $grafite;
+        }
+    }
+    button {
+        background-color: $grafite;
+        border: none;
+        color: whitesmoke;
+        padding: 16px 16px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 5px;
+        &::focus {
+            background-color: whitesmoke;
+            border: 1px solid $grafite;
+            color: $grafite;
+        }
+    }
+}
+
+.signup-button {
+    background-color: whitesmoke;
+    border: none;
+    color: $grafite;
+    padding: 16px 16px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    float: right;
+    margin-right: 1%;
+    &::focus {
+        background-color: $grafite;
+        color: white;
+    }
 }
